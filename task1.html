@@ -1,0 +1,39 @@
+<html>
+
+<script type="text/javascript">
+
+/* Definition of function */
+
+		function findMax(inputArray){
+		
+		 var largest=0;
+			 largest=Math.max(...inputArray);
+			 document.write("Largest number is "+largest);
+			 
+		}
+
+		var inputArray=[];
+		var sizeArray;
+		
+			sizeArray=prompt('Enter the size of the Array');
+
+
+		for(i=0;i<sizeArray;i++)
+		{
+			inputArray[i]=prompt("Enter the element"+(i+1));
+		}
+
+			document.write("The elements are\n");
+		for(i=0;i<inputArray.length;i++)
+		{
+			document.write(" "+inputArray[i]+"\n");
+		}
+
+
+		/* Calling function to find maximum number */
+			findMax(inputArray);
+
+
+</script>
+
+</html>

@@ -1,0 +1,55 @@
+<html>
+
+<script type="text/javascript">
+
+/* Definition of function */
+function findMax(inputArray){
+alert(inputArray.length);
+ var largest=0;
+ 
+ largest=Math.max(...inputArray);
+ 
+ document.write("Largest number is "+largest);
+ 
+}
+/******************/
+
+var numberString;
+var numberArray=[];
+var res=[];
+
+var numbersOnly = /\d,/;
+numberString=prompt("Enter the element");
+if(numbersOnly.test(numberString)){
+
+numberArray=numberString.split(",");
+
+for(var i=0;i<numberArray.length;i++){
+   document.write(numberArray[i]);
+   document.write("\n");
+}
+
+
+/* Calling the function*/
+findMax(numberArray);
+}
+else{
+
+alert("Enter in correct format");
+window.location.reload();
+}
+
+
+
+
+
+
+
+
+/* Calling function to find maximum number 
+findMax(inputArray,sizeArray);*/
+
+
+</script>
+
+</html>
